@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "AIMSR - Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AIMSR - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #e3f2fd, #f0f8ff);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background-color: #0056b3;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px;
+            background: url('/images/campus1.jpg') no-repeat center center/cover;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .course-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            background-color: white;
+        }
+
+            .course-card:hover {
+                transform: scale(1.05);
+            }
+
+            .course-card img {
+                width: 100%;
+                border-radius: 10px;
+            }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="~/images/logo.png" alt="AIMSR Logo" height="50">
+                AIMSR College
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Courses" asp-action="MCA">MCA</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Courses" asp-action="MMS">MMS</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Courses" asp-action="BMS">BMS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>Welcome to AIMSR</h1>
+        <p>Your gateway to excellence in education.</p>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">Explore Our Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="course-card">
+                    <a asp-controller="Courses" asp-action="MCA">
+                        <img src="~/images/mca.jpg" alt="MCA">
+                        <h3>MCA</h3>
+                        <p>Master of Computer Applications</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <a asp-controller="Courses" asp-action="MMS">
+                        <img src="~/images/mms.jpg" alt="MMS">
+                        <h3>MMS</h3>
+                        <p>Master of Management Studies</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <a asp-controller="Courses" asp-action="BMS">
+                        <img src="~/images/bms.jpg" alt="BMS">
+                        <h3>BMS</h3>
+                        <p>Bachelor of Management Studies</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

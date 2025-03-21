@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIMSR_Website", "AIMSR_Website\AIMSR_Website.csproj", "{943A0922-D3E1-4030-9203-58E652A021E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{943A0922-D3E1-4030-9203-58E652A021E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943A0922-D3E1-4030-9203-58E652A021E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943A0922-D3E1-4030-9203-58E652A021E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943A0922-D3E1-4030-9203-58E652A021E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44FF5BCC-9828-4198-B171-F680CE0B9002}
+	EndGlobalSection
+EndGlobal
